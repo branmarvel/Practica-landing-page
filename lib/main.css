@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.header-1 {
+  background-image: url(/img/b1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  text-decoration: none;
+  color: white;
+}
+.bg-nav {
+  background: rgb(92, 100, 188);
+  background: linear-gradient(
+    90deg,
+    rgba(92, 100, 188, 1) 0%,
+    rgba(48, 204, 156, 1) 47%
+  );
+}
