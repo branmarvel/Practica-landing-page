@@ -10,8 +10,31 @@ html {
   background-image: url(../img/b1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  min-height: 90vh;
+  background-position: center bottom;
+}
+
+.banner-1 {
+  background-image: url(../img/b2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.banner-2 {
+  background-image: url(../img/b3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.vh-90 {
+  min-height: 85vh;
+}
+.vh-50 {
+  min-height: 50vh;
+}
+.vh-34 {
+  min-height: 34vh;
 }
 .nav-link {
   color: white;
@@ -24,16 +47,63 @@ html {
   background: rgb(92, 100, 188);
   background: linear-gradient(
     90deg,
-    rgba(92, 100, 188, 1) 0%,
-    rgba(48, 204, 156, 1) 47%
+    rgba(92, 100, 188, 0.5) 0%,
+    rgba(48, 204, 156, 0.5) 47%
   );
 }
 
-.b-green{
-  border: 1px solid green;
+.b-green {
+  border: 1px solid #28e48c !important;
+}
+
+.bw-vw {
+  min-width: 33vw;
+  min-height: 20vh;
 }
 
 .nav-contact {
   border: 1px solid;
   border-color: #ffff;
+}
+
+.c-green {
+  color: #28e48c !important;
+}
+
+.c-purple {
+  color: #7c1cd4 !important;
+}
+.c-dark-purple {
+  color: #470c68 !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #28e48c !important;
+}
+
+.btn-radius {
+  border-radius: 30px !important;
+  border-style: solid;
+  border-width: 10px;
+}
+
+.radius-gray {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  width: 25px;
+  height: 25px;
+}
+
+/* boostrap toggle */
+.toggle.ios,
+.toggle-on.ios,
+.toggle-off.ios {
+  border-radius: 20px;
+}
+.toggle.ios .toggle-handle {
+  border-radius: 20px;
 }
