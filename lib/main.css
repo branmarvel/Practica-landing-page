@@ -10,6 +10,8 @@ html {
   background-image: url(../img/b1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  min-height: 90vh;
 }
 .nav-link {
   color: white;
@@ -25,6 +27,10 @@ html {
     rgba(92, 100, 188, 1) 0%,
     rgba(48, 204, 156, 1) 47%
   );
+}
+
+.b-green{
+  border: 1px solid green;
 }
 
 .nav-contact {
