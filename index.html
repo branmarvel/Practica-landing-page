@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Init Template</title>
   <!-- Main STYLES -->
-  <link rel="stylesheet" href="lib/main.css" />
+  <link rel="stylesheet" href="./lib/main.css" />
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="lib/bootstrap-4/css/bootstrap.css" />
+  <link rel="stylesheet" href="./lib/bootstrap-4/css/bootstrap.css" />
   <!-- font-awesome -->
-  <link rel="stylesheet" href="lib/fontawesome/font-awesome.min.css" />
+  <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css" />
   <!-- owl carousel -->
   <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.theme.default.min.css" />
-  <script src=".\Lib\fontawesome\fontawesome.js"></script>
+  <script src="./Lib/fontawesome/js/all.min.js"></script>
   <link href="./lib/Bootstrap-toggle/css/bootstrap4-toggle.min.css" rel="stylesheet">
 
   <!-- Google fonts -->
@@ -26,7 +29,7 @@
   <header class="">
     <nav class="navbar navbar-expand-lg bg-nav fixed-top">
       <a class="navbar-brand" href="#">
-        <img src="./img/izzicheck-Blanco.svg" height="50" alt="logo" />
+        <img src="./img/izzicheck Morado.svg" height="50" alt="logo" />
       </a>
 
       <!-- <button
@@ -44,13 +47,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#nosotros">Nosotros <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ventajas</a>
+            <a class="nav-link" href="#ventajas">Ventajas</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -58,25 +58,29 @@
               Planes
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Plan inicial</a>
-              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#planes">Plan inicial</a>
+              <a class="dropdown-item" href="#planes">Another action</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#planes">Something else here</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Como funciona</a>
+            <a class="nav-link" href="#como-funciona">Como funciona</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">A quienes servimos</a>
+            <a class="nav-link" href="#servimos">A quienes servimos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonios">Testimonios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Preguntas Frecuentes</a>
+            <a class="nav-link" href="#faq">Preguntas Frecuentes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contactanos</a>
           </li>
-          <li class="nav-item nav-contact">
+          <li class="nav-item nav-contact rounded">
             <a class="nav-link nav-contact" href="#">Obtener Ahora</a>
           </li>
         </ul>
@@ -132,16 +136,20 @@
                   </div>
                 </div>
 
-                <div class="d-flex flex-wrap">
-                  <div class=""><a href="./contact.html" class="btn btn-primary ">Iniciar la prueba gratuita</a></div>
-                  <div class="">
-                    <a href="./contact.html" class="btn bg-transparent font-weight-bold text-white b-green">Conocer
-                      más sobre Premium</a>
-                  </div>
-                </div>
+
+
               </div>
+
             </div>
+
+            <div class="d-flex btn-flex">
+              <a href="./contact.html" class="btn btn-primary ">Iniciar la prueba gratuita</a>
+              <a href="./contact.html" class="btn bg-transparent font-weight-bold text-white b-green">Conocer
+                más sobre Premium</a>
+            </div>
+
           </div>
+
         </div>
       </div>
 
@@ -150,9 +158,10 @@
   </header>
 
   <main class="">
+
     <section class="container" id="nosotros">
       <div class="row">
-        <div class="d-flex align-items-center ">
+        <div class="d-flex flex-wrap align-items-center ">
 
           <div class="col-12 col-md-6">
             <img src="./img/Laptop Desktop.png" class="img-fluid" alt="laptop desktop">
@@ -175,33 +184,34 @@
         </div>
       </div>
     </section>
+
     <section class="container my-5" id="ventajas">
       <div class="container">
         <div class="c-purple text-center">
           <h2> Ventajas</h2>
           <p>Descubre porque Izzicheck es para ti</p>
         </div>
-        <div class="d-flex justify-content-between text-center c-purple ">
-          <div class="div">
+        <div class="row text-center c-purple ">
+          <div class="col-12 col-md-6 col-lg-3">
             <img src="./img/Validation icon.svg" alt="validacion">
             <h5>Validación inmediata</h5>
             <p class="c-dark-purple">Valida de las transferencias Zelle de manera inmediata y segura.</p>
             <a class="c-green font-weight-bolder" href="#">Saber más</a>
           </div>
-          <div class="div">
+          <div class="col-12 col-md-6 col-lg-3">
             <img src="./img/Report icon.svg" alt="Reportes">
             <h5>Generación de reportes</h5>
             <p class="c-dark-purple">Genera reportes para que puedas visualizar las transferencias recibidas por Zelle.
             </p>
             <a class="c-green font-weight-bolder" href="#">Saber más </a>
           </div>
-          <div class="div">
+          <div class="col-12 col-md-6 col-lg-3">
             <img src="./img/Money icon.svg " alt="Dolar balance">
             <h5>Obtención de balances</h5>
             <p class="c-dark-purple">Obtén el balances de los pagos recibidos por Zelle por rango de fecha.</p>
             <a class="c-green font-weight-bolder" href="#">Saber más</a>
           </div>
-          <div class="div">
+          <div class="col-12 col-md-6 col-lg-3">
             <img src="./img/Custom plan icon.svg " alt="estrella">
             <h5>A tu medida</h5>
             <p class="c-dark-purple">Usa planes ajustados a tu medida.</p>
@@ -221,10 +231,13 @@
           </h2>
         </div>
         <div class="row no-gutters bg-white ">
-          <div class="col-12 col-md-6  "><img src="./img/Screenshot_3.png" alt="Hombre con celular"></div>
           <div class="col-12 col-md-6">
-            <div class=" p-4 text-center">
-              <h2 class="c-purple  ">Hazlo en 3 simples pasos</h2>
+            <img src="./img/Screenshot_3.png" class="img-fluid w-100" alt="Hombre con celular">
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="p-4 text-center ">
+              <h2 class="c-purple ">Hazlo en 3 simples pasos</h2>
+
               <div class="d-flex align-items-center py-3 ml-3 ">
                 <div>
                   <div class="radius-gray mr-3  "><span>1</span></div>
@@ -247,6 +260,7 @@
       </div>
 
     </section>
+
     <section id="planes" class="banner-2 my-5">
       <div class="text-center text-white py-5">
         <p>Planes mensuales</p>
@@ -269,7 +283,7 @@
       <div class="container vh-50 y-5">
         <div class="row c-purple ">
           <div class="col-12 col-md-6 col-lg-3 ">
-            <div class="bg-light vh-34 p-4 d-flex flex-column justify-content-between ">
+            <div class="bg-light rounded vh-34 p-4 d-flex flex-column justify-content-between ">
               <h5>Plan Inicial</h5>
               <p>Comienza probando lo que Izzicheck puede hacer por ti </p>
               <div class="d-flex px-4">
@@ -281,21 +295,20 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="d-flex">
-              <div class="bg-light vh-34 p-4 d-flex flex-column justify-content-between">
-                <h5>Plan Emprendedor</h5>
-                <p>Mejora oportunidades de cobrar con tu emprendimiento</p>
-                <div class="d-flex px-4">
-                  <i class="fas fa-check c-green"></i>
-                  <p>Hasta 50 transacciones</p>
-                </div>
-                <div class=""><a type="button" class="btn btn-outline-dark btn-radius w-100 c-dark-purple " href="#">Lo
-                    necesito</a></div>
+            <div class="bg-light rounded vh-34 p-4 d-flex flex-column justify-content-between">
+              <h5>Plan Emprendedor</h5>
+              <p>Mejora oportunidades de cobrar con tu emprendimiento</p>
+              <div class="d-flex px-4">
+                <i class="fas fa-check c-green"></i>
+                <p>Hasta 50 transacciones</p>
               </div>
+              <div class=""><a type="button" class="btn btn-outline-dark btn-radius w-100 c-dark-purple " href="#">Lo
+                  necesito</a></div>
             </div>
+
           </div>
           <div class="col-12 col-md-6 col-lg-3 ">
-            <div class="bg-light vh-34 p-4 d-flex flex-column justify-content-between">
+            <div class="bg-light rounded vh-34 p-4 d-flex flex-column justify-content-between">
               <h5>Plan Pymes</h5>
               <p>Avanza al siguiente nivel con ayuda de Izzicheck</p>
               <div class="d-flex px-4">
@@ -307,7 +320,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 ">
-            <div class="bg-light vh-34 p-4 d-flex flex-column justify-content-between">
+            <div class="bg-light rounded vh-34 p-4 d-flex flex-column justify-content-between">
               <h5>Plan Corporativo</h5>
               <p>Hazlo Izzi para tus empresas o proyectos ambiciosos</p>
               <div class="d-flex px-4">
@@ -324,40 +337,222 @@
 
     </section>
 
-    <section id="servimos">
+    <section id="servimos" class="my-5 py-5">
       <div class="container">
-        <div class="row">
+        <div class="row ">
           <div class="col-12 col-md-6">
-            <div class="owl-carousel owl-theme">
-              <div class="item" ><h4></h4></div>
-              <div class="item" ><h4></h4></div>
-              <div class="item" ><h4></h4></div>
-              <div class="item" ><h4></h4></div>
+            <div class="owl-carousel-1 owl-carousel owl-theme">
+              <div class="item"> <img src="./img/Empresa.png" alt="Empresa"> </div>
+              <div class="item"> <img src="./img/Educacion.png" alt="Educacion"> </div>
+              <div class="item"> <img src="./img/Emprendedor.png" alt="Emprendedor"> </div>
+              <div class="item"> <img src="./img/Profesional.png" alt="Profesional"> </div>
+
+            </div>
+          </div>
+          <div class="col-12 col-md-6 c-purple my-auto">
+
+            <h6 class="mb-4"> A QUIENES SERVIMOS</h6>
+            <h3 class="c-green">Nuestra plataforma</h3>
+            <h5 class="mb-4">está orientada a satisfacer las necesidades para todo tipo de clientes</h5>
+            <div class="d-flex px-4 mb-4 "><i class="c-green fas fa-check"> </i><span>Servicios Profesionales y
+                Corporativos</span>
+            </div>
+            <div class="d-flex px-4 mb-4 "><i class="c-green fas fa-check"> </i><span>Emprendedores</span></div>
+            <div class="d-flex px-4 mb-4 "><i class="c-green fas fa-check"> </i><span>Pymes</span></div>
+            <div class="d-flex px-4 mb-4 "><i class="c-green fas fa-check"> </i><span>Instituciones para la
+                educación</span></div>
+            <div class="d-flex px-4 mb-4 "><i class="c-green fas fa-check"> </i><span>Comercios</span></div>
+            <div class="d-flex px-4 mb-4 "><i class="c-green fas fa-check"> </i><span>Personas</span></div>
+            <div class="d-flex px-4 mb-4 "><i class="c-green fas fa-check"> </i><span>y más...</span></div>
 
           </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center ">
+          <div class="d-sm-none d-md-none d-lg-block">
+            <img src="./img/dots-l.png" alt="Dots">
           </div>
-          <div class="col-12 col-md-6 c-purple">
-            <h6>
-              A QUIENES SERVIMOS</h6>
-            <h3 class="c-green">Nuestra plataforma</h3>
-            <h5>está orientada a satisfacer las necesidades para todo tipo de clientes</h5>
-            <div class="d-flex"><i class="c-green fas fa-check"> </i><span>Servicios Profesionales y Corporativos</span></div>
-            <div class="d-flex"><i class="c-green fas fa-check"> </i><span>Emprendedores</span></div>
-            <div class="d-flex"><i class="c-green fas fa-check"> </i><span>Pymes</span></div>
-            <div class="d-flex"><i class="c-green fas fa-check"> </i><span>Instituciones para la educación</span></div>
-            <div class="d-flex"><i class="c-green fas fa-check"> </i><span>Comercios</span></div>
-            <div class="d-flex"><i class="c-green fas fa-check"> </i><span>Personas</span></div>
-            <div class="d-flex"><i class="c-green fas fa-check"> </i><span>y más...</span></div>
+          <div class="">
+            <h2 class="c-purple text-center "><span class="c-green">No pagues %</span> por cada
+              transacción que recibes
+            </h2>
+
+          </div>
+          <div class="d-sm-none d-md-none d-lg-block">
+            <img src="./img/dots-r.png" alt="Dots">
           </div>
         </div>
       </div>
 
     </section>
 
+    <section id="testimonios">
+      <div class="container">
+
+        <div class="d-flex align-items-center my-3 py-3">
+          <i class="fa-solid fa-comment fa-lg c-dark-purple pr-2"></i>
+          <H4>Seguimos sumando</H4>
+        </div>
+        <div class="owl-carousel-2 owl-carousel owl-theme">
+
+          <div class="item">
+            <div class="d-flex pr-2"><span><img class="pr-2" src="./img/Testimonial Picture Descktop (1).png"
+                  alt="mujer"></span><span><img class="pr-2" src="./img/star.svg" alt="estrella"></span><span><img
+                  class="pr-2" src="./img/star.svg" alt="estrella"></span><span><img class="pr-2" src="./img/star.svg"
+                  alt=""></span><span><img class="pr-2" src="./img/star.svg" alt=""></span><span><img class="pr-2"
+                  src="./img/star.svg" alt=""></span></div>
+            <p>
+              Gracias a Izzicheck hemos captado más clientes, ya no sentimos desconfianza porque podemos validar los
+              pagos
+              de manera rápida y sencilla.
+            </p>
+            <h5 class="c-dark-purple">
+              Lucia Puerto
+            </h5>
+            <h6 class="c-purple">Product Manager</h6>
+          </div>
+          <div class="item">
+            <div class="d-flex pr-2"><span><img class="pr-2" src="./img/Testimonial Picture Descktop (2).png"
+                  alt="mujer"></span><span><img class="pr-2" src="./img/star.svg" alt="estrella"></span><span><img
+                  class="pr-2" src="./img/star.svg" alt="estrella"></span><span><img class="pr-2" src="./img/star.svg"
+                  alt=""></span><span><img class="pr-2" src="./img/star.svg" alt=""></span><span><img class="pr-2"
+                  src="./img/star.svg" alt=""></span></div>
+            <p>
+              Gracias a Izzicheck hemos captado más clientes, ya no sentimos desconfianza porque podemos validar los
+              pagos
+              de manera rápida y sencilla.
+            </p>
+            <h5 class="c-dark-purple">
+              Lucia Puerto
+            </h5>
+            <h6 class="c-purple">Product Manager</h6>
+
+          </div>
+          <div class="item">
+            <div class="d-flex pr-2"><span><img class="pr-2" src="./img/Testimonial Picture Descktop (3).png"
+                  alt="hombre"></span><span><img class="pr-2" src="./img/star.svg" alt="estrella"></span><span><img
+                  class="pr-2" src="./img/star.svg" alt="estrella"></span><span><img class="pr-2" src="./img/star.svg"
+                  alt=""></span><span><img class="pr-2" src="./img/star.svg" alt=""></span><span><img class="pr-2"
+                  src="./img/star.svg" alt=""></span></div>
+            <p>
+              Gracias a Izzicheck hemos captado más clientes, ya no sentimos desconfianza porque podemos validar los
+              pagos
+              de manera rápida y sencilla.
+            </p>
+            <h5 class="c-dark-purple">
+              Lucia Puerto
+            </h5>
+            <h6 class="c-purple">Product Manager</h6>
+          </div>
+          <div class="item">
+            <div class="d-flex pr-2"><span><img class="pr-2" src="./img/Testimonial Picture Descktop (2).png"
+                  alt="mujer"></span><span><img class="pr-2" src="./img/star.svg" alt="estrella"></span><span><img
+                  class="pr-2" src="./img/star.svg" alt="estrella"></span><span><img class="pr-2" src="./img/star.svg"
+                  alt=""></span><span><img class="pr-2" src="./img/star.svg" alt=""></span><span><img class="pr-2"
+                  src="./img/star.svg" alt=""></span></div>
+            <p>
+              Gracias a Izzicheck hemos captado más clientes, ya no sentimos desconfianza porque podemos validar los
+              pagos
+              de manera rápida y sencilla.
+            </p>
+            <h5 class="c-dark-purple">
+              Lucia Puerto
+            </h5>
+            <h6 class="c-purple">Product Manager</h6>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="banner-3 my-5 py-5" id="faq">
+      <div class="container">
+        <h2 class="text-white text-center">Preguntas frecuentes</h2>
+        <div class="row">
+
+          <div class="col-12 col-md-8">
+            <div class="bg-light rounded p-3 my-3 text-center">
+              <div>
+                <img class="w-100 mb-3 rounded img-cover" src="./img/manos.png" alt="manos">
+                <h5 class="c-purple mb-3">¿Qué es Izzicheck?</h5>
+                <p class="c-purple mb-3">Izzicheck es la solución tecnológica de validación de pagos recibidos por
+                  Zelle,
+                  en donde podrás recibir dinero verificando al instante su recepción sin tener que entrar a tu cuenta
+                  bancaria, además de poder generar reportes con los balances de pagos recibidos.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="bg-light rounded p-3 my-3 text-center">
+              <img class="w-100 mb-3 rounded img-cover" style="height: 256px;" src="./img/Es gratis desktop 2.png"
+                alt="chica con telefono">
+              <h5 class="c-purple mb-3">¿Usar Izzicheck es gratis?</h5>
+              <p class="c-purple mb-3">¡Totalmente gratuito! Puedes usar el validador Izzicheck hasta 9
+                transacciones sin
+                ningún costo.</p>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="bg-light rounded p-3 my-3 text-center">
+              <div>
+                <img class="w-100 mb-3 rounded img-cover" src="./img/crece negocio desktop.png" alt="mujer con grafico">
+                <h5 class="c-purple mb-3">Si mis ventas incrementan, ¿Puedo cambiar de plan para uno que registre
+                  más
+                  validaciones?</h5>
+                <p class="c-purple mb-3 ">¡Por supuesto que sí! Puedes cambiar al plan ajustado a tus
+                  necesidades en el
+                  momento que lo requieras.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
   </main>
 
-  <footer class="container">
-    <section></section>
+  <footer class="container my-5 py-5">
+    <div class="row">
+      <div class="col-12 col-md-2 offset-md-3  ">
+        <div class=""> <img class="icon-100" src="./img/izzicheck Morado.svg" alt="logo izzicheck morado"></div>
+        <div class="text-white text-muted">@izzicheck.cc </div>
+        <div class="d-flex mt-2"><a class="a-link" class="mr-2" href="#"><img src="./img/Instagram Icon.svg"
+              alt="instagram"></a> <a class="a-link" href="#"><img src="./img/Facebook icon.svg" alt=""></a></div>
+      </div>
+      <div class="col-12 col-md-2  c-purple">
+        <div class="mt-3">
+          <h5>Información</h5>
+          <div class="d-flex flex-column">
+            <a class="a-link" href="#">Términos y condiciones</a><a class="a-link" href="#">Sobre nuestra
+              seguridad</a><a class="a-link" href="#">Política de
+              cookies</a><a class="a-link" href="#">Política de privacidad</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-2  c-purple">
+        <div class="mt-3">
+          <h5>Entradas al Menú</h5>
+          <div class="d-flex flex-column">
+            <a class="a-link" href="#">Ventajas</a><a class="a-link" href="#">Cómo funciona</a><a class="a-link"
+              href="#">Planes</a><a class="a-link" href="#">Contáctanos</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <img src="./img/Heart.svg" alt="Corazon">
+      </div>
+    </div>
+
+
+
   </footer>
   <!-- SCRIPTS -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -367,12 +562,40 @@
   <script src="./lib/Bootstrap-toggle/js/bootstrap4-toggle.min.js"></script>
 
   <script>
-$('.owl-carousel').owlCarousel({
-    margin:10,
-    loop:true,
-    autoWidth:true,
-    items:4
-})
+    $('.owl-carousel-1').owlCarousel({
+      loop: true,
+      nav: false,
+      margin: 20,
+      singleItem: true,
+      items: 1,
+      autoplay: true,
+      slideSpeed: 800,
+      autoPlaySpeed: 5000,
+      autoPlayTimeout: 2500,
+      autoplayhoverpause: true
+    });
+
+    $('.owl-carousel-2').owlCarousel({
+
+      loop: true,
+      margin: 10,
+      nav: true,
+      autoplay: true,
+      slideSpeed: 800,
+      autoPlaySpeed: 5000,
+      autoPlayTimeout: 2500,
+      autoplayhoverpause: true,
+      navText: ["<i class='fa-solid fa-circle-left c-purple'></i>", "<i class='fa-solid fa-circle-right c-purple'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        }
+      }
+    })
+
   </script>
 </body>
 

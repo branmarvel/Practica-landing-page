@@ -6,6 +6,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
+.img-cover {
+  object-fit: cover;
+}
 .header-1 {
   background-image: url(../img/b1.png);
   background-repeat: no-repeat;
@@ -22,6 +25,12 @@ html {
 
 .banner-2 {
   background-image: url(../img/b3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.banner-3 {
+  background-image: url(../img/b-ultimo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -106,4 +115,44 @@ html {
 }
 .toggle.ios .toggle-handle {
   border-radius: 20px;
+}
+
+.owl-carousel span {
+  background: #470c68 !important;
+}
+.owl-carousel .active span {
+  background: #28e48c !important;
+}
+
+.owl-carousel-2 span {
+  background: transparent !important;
+}
+.owl-carousel-2 .active span {
+  background: transparent !important;
+}
+
+.icon-100 {
+  width: 100px;
+  height: 100px;
+}
+
+.a-link {
+  color: #7c1cd4;
+  margin: 5px 0px;
+}
+.a-link:hover {
+  text-decoration: none;
+  color: #7c1cd4;
+}
+
+@media screen and (min-width: 500px) {
+  .btn-flex {
+    flex-wrap: wrap !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn-flex {
+    flex-wrap: nowrap !important;
+  }
 }
