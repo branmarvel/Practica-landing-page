@@ -144,15 +144,3 @@ html {
   text-decoration: none;
   color: #7c1cd4;
 }
-
-@media screen and (min-width: 500px) {
-  .btn-flex {
-    flex-wrap: wrap !important;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .btn-flex {
-    flex-wrap: nowrap !important;
-  }
-}
