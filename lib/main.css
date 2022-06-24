@@ -9,6 +9,14 @@ html {
 .img-cover {
   object-fit: cover;
 }
+
+/*
+ * ────────────────────────────────────────────────────── I ──────────
+ *   :::::: B A N N E R S : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────────
+
+ */
+
 .header-1 {
   background-image: url(../img/b1.png);
   background-repeat: no-repeat;
@@ -35,6 +43,9 @@ html {
   background-size: cover;
   background-position: center top;
 }
+/*
+ * ────────────────────────────────────────────────────────────────── BANNERS ─────
+ */
 
 .vh-90 {
   min-height: 85vh;
@@ -67,7 +78,7 @@ html {
 
 .bw-vw {
   min-width: 33vw;
-  min-height: 20vh;
+  min-height: 25vh;
 }
 
 .nav-contact {
@@ -107,12 +118,12 @@ html {
   height: 25px;
 }
 
-/* boostrap toggle */
 .toggle.ios,
 .toggle-on.ios,
 .toggle-off.ios {
   border-radius: 20px;
 }
+
 .toggle.ios .toggle-handle {
   border-radius: 20px;
 }
